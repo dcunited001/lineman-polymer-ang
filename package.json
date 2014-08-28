@@ -1,0 +1,24 @@
+{
+  "name": "lineman-polymer-ang",
+  "title": "An HTML/JS/CSS app using Angular.JS and Polymer",
+  "version": "0.0.1",
+  "private": true,
+  "author": {
+    "name": "David Conner",
+    "company": "Just Me"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "jasmine-given": "^2.6.2",
+    "lineman": "^0.34.0",
+    "lineman-angular": "^0.2.0",
+    "lineman-bower": "^0.0.5",
+    "lineman-less": "^0.1.0",
+    "lineman-rails": "^0.1.0",
+    "protractor": "^1.1.1"
+  },
+  "scripts": {
+    "start": "lineman run",
+    "test": "lineman spec-ci"
+  }
+}
