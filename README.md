@@ -1,6 +1,13 @@
 # Appistack - Lineman Polymer Ang
 
  A Containerized AngularJS Single-Page App Template with AngularUI and Polymer
+ 
+ Until I publish my [lineman-vulcanize](https://github.com/dcunited001/lineman-vulcanize) plugin, you'll need to clone 
+ that repository and `npm link` it, so that `npm install` works from this repository.  I'm currently running into a
+ few problems with this lineman plugin that I'm having a hard time debugging.  I'm trying to debug the 
+ [grunt-vulcanize](https://github.com/Polymer/grunt-vulcanize) task as it's running thru Lineman, but Lineman is 
+ suppressing anything i try to write to the console.  So I'm waiting on a response in the Polymer google group or from 
+ Lineman before i proceed.
 
 ## TODO
 - TODO: Travis Build and Build Status Icon
