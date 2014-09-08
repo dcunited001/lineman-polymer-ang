@@ -6,7 +6,19 @@
     <link rel="stylesheet" type="text/css" href="/css/app.css" media="all" />
 
   </head>
-  <body fullbleed vertical horizontal ng-cloak>
+  <body fullbleed vertical horizontal>
+
+<!-- core-scroll-header-panel doesn't work =/
+
+  <core-scroll-header-panel flex>
+    <core-toolbar>
+      <div>Hello World!</div>
+    </core-toolbar>
+  </core-scroll-header-panel>
+
+  -->
+
+<!-- core-scroll-header-panel doesn't work =/
     <core-scroll-header-panel condenses>
 
       <core-toolbar class="tall">
@@ -27,6 +39,82 @@
 
     </core-scroll-header-panel>
 
+    -->
+
+    <!-- but almost everything else does -->
+
+<!-- using core-elements
+<core-toolbar class="tall">
+  <core-icon-button icon="menu"></core-icon-button>
+  <core-icon-button icon="arrow-back"></core-icon-button>
+  <core-icon-button icon="arrow-forward"></core-icon-button>
+</core-toolbar>
+-->
+
+<core-toolbar class="medium-tall"> <!-- class="tall"  to work with core-scroll-header-panel -->
+
+  <paper-menu-button icon="menu" valign="bottom">
+    <div><paper-item icon="settings-input-antenna">Audio</paper-item></div>
+    <div><paper-item icon="settings">Settings</paper-item></div>
+    <div><paper-item icon="help">Help</paper-item></div>
+  </paper-menu-button>
+
+  <div flex></div>
+  <paper-input floatingLabel=true label="Username"></paper-input>
+  <paper-input floatingLabel=true label="Password" type="password"></paper-input>
+  <paper-icon-button icon="search"></paper-icon-button>
+  <paper-icon-button icon="more-vert"></paper-icon-button>
+
+  <!--Add to fix the tabs to the right side of the navbar-->
+  <!--<span class="bottom" flex></span>-->
+
+  <div class="bottom fit" horizontal layout>
+
+    <paper-tabs id="tabs" selected="0" class="bottom indent" flex style="max-width: 800px;">
+      <paper-tab name="home"><paper-icon-button icon="home" label="Home"></paper-icon-button></paper-tab>
+      <paper-tab name="favorites"><paper-icon-button icon="star" label="Favorites"></paper-icon-button></paper-tab>
+      <paper-tab name="projects"><paper-icon-button icon="drive-chart" label="Projects"></paper-icon-button></paper-tab>
+      <paper-tab name="blog"><paper-icon-button icon="drive-document" label="Blog"></paper-icon-button></paper-tab>
+      <paper-tab name="about"><paper-icon-button icon="info" label="About"></paper-icon-button></paper-tab>
+    </paper-tabs>
+  </div>
+
+  <!--<paper-icon-button icon="arrow-back"></paper-icon-button>-->
+  <!--<paper-icon-button icon="arrow-forward"></paper-icon-button>-->
+
+  <!--<span class="bottom" flex></span>-->
+</core-toolbar>
+
+    <paper-input floatingLabel=true label="Username"></paper-input>
+    <paper-input label="Password"></paper-input>
+
+    <paper-dropdown selected="Financier" valueattr="label">
+      <paper-item label="Croissant"></paper-item>
+      <paper-item label="Donut"></paper-item>
+      <paper-item label="Financier"></paper-item>
+      <paper-item label="Madeleine"></paper-item>
+    </paper-dropdown>
+
+    <!--<paper-dropdown selected="Financier" valueattr="label">-->
+      <!--<paper-item label="Croissant"></paper-item>-->
+      <!--<paper-item label="Donut"></paper-item>-->
+      <!--<paper-item label="Financier"></paper-item>-->
+      <!--<paper-item label="Madeleine"></paper-item>-->
+    <!--</paper-dropdown>-->
+    <!--drop-up:-->
+
+    <p>TODO: </p>
+    <section>
+      <paper-dropdown valign="top" halign="right" valueattr="label" label="Favorite pastry" selected="Donut">
+        <paper-item label="Fix Dropdown"></paper-item>
+        <paper-item label="Add Footer"></paper-item>
+        <paper-item label="Login Widget"></paper-item>
+        <paper-item label="Link tabs to Angular states"></paper-item>
+      </paper-dropdown>
+    </section>
+
     <script type="text/javascript" src="/js/app.js"></script>
+    <script type="text/javascript" src="/js/platform.js"></script>
+    <link rel="import" type="text/html" href="/components-build.html" />
   </body>
 </html>
