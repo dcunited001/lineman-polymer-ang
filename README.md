@@ -8,6 +8,19 @@
  [grunt-vulcanize](https://github.com/Polymer/grunt-vulcanize) task as it's running thru Lineman, but Lineman is 
  suppressing anything i try to write to the console.  So I'm waiting on a response in the Polymer google group or from 
  Lineman before i proceed.
+ 
+## Using the Template
+
+1. `npm install -g lineman`
+1. `npm install`
+1. `npm install -g vulcanize`
+1. `vulcanize -o app/static/components-build.html app/vulcanize/components.html --inline --csp`
+  - until lineman-vulcanize plugin is available
+1. `lineman run`
+
+## Building
+
+1. `lineman build`
 
 ## TODO
 - TODO: Travis Build and Build Status Icon
@@ -25,6 +38,9 @@
 - TODO: updated AuthenticationService to persist until logout
 
 ## References
+Polymer Core Elements
+- [Core-Icon set](http://www.polymer-project.org/components/core-icons/demo.html)
+
 Routing
 - [Diving Deep into the Angular Router](http://www.ng-newsletter.com/posts/angular-ui-router.html)
 
