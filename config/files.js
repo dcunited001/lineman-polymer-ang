@@ -12,7 +12,8 @@ module.exports = function (lineman) {
       vendor: [
         //TODO: add polymer files
         //TODO: add core-elements
-        //TODO: add paper-elements
+        //TODO: add paper-elements,
+        //"vendor/bower/platform/platform.js",
         "vendor/bower/underscore/underscore.js",
         "vendor/bower/underscore.string/lib/underscore.string.js",
         "vendor/bower/angular/angular.js",
@@ -25,6 +26,7 @@ module.exports = function (lineman) {
       app: [
         "app/js/app.js",
         "app/js/**/*.js",
+        "app/static/components-build.js",
 
         // TODO: appending the template-cache location is a hack
         // - files.ngtemplates.dest no longer resolves in application.js

@@ -58,9 +58,14 @@ module.exports = function (lineman) {
       }
     },
 
-    // removeTasks: {
-    //   dev: ["jshint"]
-    // },
+    removeTasks: {
+       common: ["handlebars", "jst", "jshint"]
+    },
+
+    //because jshint is really stubborn and blows up on polymer files
+    jshint: {
+      files: []
+    }
 
     // Asset Fingerprints
     //
